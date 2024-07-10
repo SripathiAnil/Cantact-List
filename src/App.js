@@ -72,31 +72,31 @@ class App extends Component {
   render() {
     const {name, mobileNo, contactsList} = this.state
     return (
-      <div className="app-container">
-        <div className="responsive-container">
-          <h1 className="heading">Contacts</h1>
-          <form className="contact-form-container" onSubmit={this.onAddContact}>
+      <div className='app-container'>
+        <div className='responsive-container'>
+          <h1 className='heading'>Contacts</h1>
+          <form className='contact-form-container' onSubmit={this.onAddContact}>
             <input
               value={name}
               onChange={this.onChangeName}
-              className="input"
-              placeholder="Name"
+              className='input'
+              placeholder='Name'
             />
             <input
-              className="input"
+              className='input'
               value={mobileNo}
               onChange={this.onChangeMobileNo}
-              placeholder="Mobile Number"
+              placeholder='Mobile Number'
             />
-            <button type="submit" className="button">
+            <button type='submit' className='button'>
               Add Contact
             </button>
           </form>
-          <ul className="contacts-table">
-            <li className="table-header">
-              <p className="table-header-cell name-column">Name</p>
-              <hr className="separator" />
-              <p className="table-header-cell">Mobile Number</p>
+          <ul className='contacts-table'>
+            <li className='table-header'>
+              <p className='table-header-cell name-column'>Name</p>
+              <hr className='separator' />
+              <p className='table-header-cell'>Mobile Number</p>
             </li>
             {contactsList.map(eachContact => (
               <ContactItem
